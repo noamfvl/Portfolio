@@ -1,0 +1,86 @@
+---
+import Icon from './Icon.astro';
+import CallToAction2 from '../components/CallToAction2.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="stat" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Analyse de données</h2>
+		<p>
+			Je suis expérimenté dans l'analyse statistique, que ce soit la statistique descriptive ou la statistique inférentielle. Je possède aussi une expertise dans les méthodes de régression, classification et clustering, ainsi que dans l'utilisation du machine learning pour réaliser des prédictions. De plus, j'ai développé des compétences en data mining, permettant l'extraction judicieuse de connaissances à partir de vastes ensembles de données.
+		</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="database" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Gestion de base de données</h2>
+		<p>
+			Je possède les compétences nécessaires à la conception et la mise en œuvre de bases de données. Ma maîtrise du SQL et du NoSQL couvre diverses plateformes telles que MySQL, Oracle, SQLite, Snowflake et Redis, me fournissant ainsi les compétences nécessaires pour assurer une gestion efficace des données.
+		</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="code" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Logiciel et langage</h2>
+		<p>
+			Dans le domaine du traitement des données et des analyses statistiques, je suis compétent dans l'utilisation de Python, R et SAS pour mener à bien des analyses approfondies. En ce qui concerne les technologies web, je maîtrise le développement avec HTML, CSS, JavaScript et Python, me permettant de créer des outils décisionnel interactifs et dynamiques. En matière de Business Intelligence, je maitrise particulièrement le logiciel Power BI ainsi que l'outil Power Query, que j'utilise pour présenter et partager des visuels de manière clair et impactant. Ces compétences combinées me permettent de fournir des solutions informatiques complètes et performantes.
+		</p>
+	</div>
+	<div class="cta">
+    			<CallToAction2 href="/portfolio/assets/backgrounds/New_cv.pdf" download="Noam_Fauvel_CV.pdf">
+       				<span style="margin-right: 0.5rem;">Télécharger mon CV</span>
+				<Icon icon="CV" size="2.5rem" />
+    			</CallToAction2>
+	</div
+</section>
+
+<style>
+ 	.cta {
+    		text-align: center; 
+    		margin-top: 2rem; 
+	}
+
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+
+		.cta {
+        		grid-column: 1 / -1; /* Étendre sur toutes les colonnes */
+        		text-align: center; /* Centrer le contenu horizontalement */
+        		margin-top: 2rem; /* Espacement vers le bas */
+    		}
+	}
+</style>
