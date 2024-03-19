@@ -26,16 +26,15 @@ const projects = (await getCollection('work'))
 ---
 <BaseLayout>
 	<head>
-    		<!-- Google tag (gtag.js) -->
-    		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQRM1RS4PP"></script>
-    		<script>
-     		 window.dataLayer = window.dataLayer || [];
-     		 function gtag(){dataLayer.push(arguments);}
-     		 gtag('js', new Date());
-    
-      		gtag('config', 'G-JQRM1RS4PP');
-    		</script>
- 	</head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQRM1RS4PP" is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JQRM1RS4PP');
+    </script>
+  </head>
 
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
