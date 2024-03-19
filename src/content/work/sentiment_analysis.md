@@ -10,6 +10,7 @@ tags:
   - SQL
 ---
 ### Contexte et objectifs du projet
+
 <div style="text-align: justify"> 
 L'analyse des sentiments, également connue sous d'opinion mining est est le processus qui consiste à analyser un texte numérique pour déterminer si le ton émotionnel du message est plutôt positif ou négatif. Dans le cadre de ce projet, je dispose de 50 000 critiques de films notés positivement ou négativement. Ce jeu est balancé de manière suivante : 25 000 critiques positives et 25 000 négatives. De plus, 25 000 critiques seront utilisées pour l’apprentissage et 25 000 pour le test. Chaque critique est dotée d’une note comprise entre 1 et 10. Une critique est négative lorsque sa note est inférieure à 4 et est positive lorsqu’elle est supérieure à 7. L'objectif est donc de prédire la catégorie d’une critique (positive ou négative) à partir de son commentaire.
 </div>
